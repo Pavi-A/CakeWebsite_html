@@ -1,0 +1,86 @@
+body{
+    background-image: url(ice\ cream\ cake.jpg);
+}
+.special-offer {
+    background-color:blueviolet;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+
+.special-offer h2 {
+    font-size: 24px;
+}
+
+.special-offer p {
+    font-size: 15px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #83a5f3;
+    padding: 30px;
+    
+}
+
+.row a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.order-confirmation {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 50px;
+
+}
+.center-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 300px; /* Adjust the container's height as needed */
+    padding-left: 50px;
+    flex-direction: column;
+}
+
+.order-details {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.cake {
+    text-align: center;
+    width: 150px;
+    display:flex;
+    border-image: auto;
+    padding: 20px;
+}
+
+.cake img {
+    width: 100%;
+    height: auto;
+}
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns in each row */
+    gap: 20px; /* Gap between rows and columns */
+}
+

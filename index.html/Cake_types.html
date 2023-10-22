@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Details</title>
+    <link rel="stylesheet type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <h2>CAKE DETAILS</h2>
+    <div class="center-container">
+    
+        <div class="cake">
+            <h2>Vanilla Cake</h2>
+            <img style="width: 150px;" src="Vanilla-Cake.jpeg" alt="Vanilla Cake">
+            <p><b>Price: Rs 200</b></p>
+            <button onclick="showOrderConfirmation('Vanilla Cake', 200)">Add to Cart</button><br><br>
+        </div>
+
+        <div class="cake">
+            <h2>Strawberry Cake</h2>
+            <img style="width: 150px;"src="Stawbery_cake.jpg" alt="Strawberry Cake">
+            <p><b>Price: Rs 300</b></p>
+            <button onclick="showOrderConfirmation('Strawberry Cake', 300)">Add to Cart</button>
+        </div>
+
+        <div class="cake">
+            <h2>Butterscotch Cake</h2>
+            <img style="width: 150px"src="Butterscoth_image.jpg" alt="Butterscotch Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('Butterscotch Cake', 400)">Add to Cart</button>
+        </div>
+        <div class="cake">
+            <h2>Choclate Cake</h2>
+            <img style="width: 100px"src="Choclate image.jpg" alt="choco Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('choco Cake', 400)">Add to Cart</button>
+        </div>
+        <div class="cake">
+            <h2>Red velvet Cake</h2>
+            <img style="width: 150px"src="Red velvet image.jpg" alt="Red Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('Red Cake', 400)">Add to Cart</button>
+        </div>
+        <div class="cake">
+            <h2>ice-cream Cake</h2>
+            <img style="width: 100px"src="ice cream cake.jpg" alt="ice Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('ice Cake', 400)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Hidden Order Confirmation Section -->
+    <div class="order-confirmation" id="orderConfirmation">
+        <div class="order-details">
+            <h2>Order Confirmation</h2>
+            <h3>Item: <span id="itemName"></span></h3>
+            <h2>Price: Rs <span id="itemPrice"></span></h2>
+            <button onclick="SubmitOrderConfirmation()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions to show and close the order confirmation
+        function showOrderConfirmation(itemName, itemPrice) {
+            document.getElementById("itemName").textContent = itemName;
+            document.getElementById("itemPrice").textContent = itemPrice;
+            document.getElementById("orderConfirmation").style.display = "block";
+        }
+
+        function SubmitOrderConfirmation() {
+            window.location.href='last.html';
+        }
+    </script>
+</body>
+</html>
